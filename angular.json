@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@ensemble/styles/dist/ensemble.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@ensemble/components/dist/ensemble.umd.cjs"
+            ]
           },
           "configurations": {
             "production": {

@@ -30,22 +30,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/@ensemble/styles/dist/ensemble.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@ensemble/javascript/dist/ensemble.js",
+              "node_modules/@ensemble/components/dist/ensemble.umd.cjs"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "3mb"
                 }
               ],
               "outputHashing": "all"
@@ -100,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -30,9 +30,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@ensemble/icons/dist/css/icons.css",
+              "node_modules/@ensemble/styles/dist/utilities.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@ensemble/javascript/dist/ensemble.js",
+              "node_modules/@ensemble/components/dist/ensemble.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
